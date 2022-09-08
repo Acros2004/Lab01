@@ -161,6 +161,54 @@ namespace Laba1
             же тип данных.
             */
 
+            //Задание 2ab
+            string stg1 = "Первая строка";
+            string stg2 = "Вторая строка";
+            string stg3 = "Третяя строка";
+
+            // сравнение строк          
+            Console.WriteLine("Сравнение(Compare) " + string.Compare(stg1, stg2));
+
+            // слияние:
+            Console.WriteLine("Слияние(Concat) " + string.Concat(stg1, stg2, stg3));
+
+            // выделение подстроки:
+            Console.WriteLine("Выделение(Substring) " + stg1.Substring(5));
+
+            // копирование
+            string cop = string.Copy(stg3);
+            Console.WriteLine("Копирование " + cop);
+
+            // разделение строки на слова
+            string strfrsplt = "Этот текст был разделён на отдельные слова";
+            string[] words = strfrsplt.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            foreach (string strFE in words)
+            {
+                Console.WriteLine(strFE);
+            }
+
+            // вставка подстроки
+            string strfrIns = "Раз два три ";
+            string substr = "четыре";
+
+            strfrIns = strfrIns.Insert(11, substr);
+            Console.WriteLine(strfrIns);
+
+            // удаление заданной подстроки
+            Console.WriteLine("Удаление одного символа " + stg1.Remove(2, 1));
+
+            //Задание 2c метод
+            string nullstr = null;
+            string emptystr = "";
+            bool emptySTR1 = string.IsNullOrEmpty(nullstr);
+            bool emptySTR2 = string.IsNullOrEmpty(emptystr);
+
+            //Задание 2d
+            StringBuilder strblr = new StringBuilder("StringBuilder");
+            Console.WriteLine("Удаление 3 символов с начала --> " + strblr.Remove(0, 3));
+            string sym = "Н";
+            Console.WriteLine("символ Н в начало строки --> " + strblr.Insert(0, sym));
+            Console.WriteLine("символ Н в конец строки --> " + strblr.Insert(strblr.Length, sym));
         }
     }
 }
