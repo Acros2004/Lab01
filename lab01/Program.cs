@@ -8,108 +8,119 @@ namespace Laba1
         static void Main(string[] args)
         {
 
-            //Задание 1a
-            //Логический тип bool 
-            Console.WriteLine("-------------------Логические типы-------------------");
-            bool log = true; //true или false 
-            Console.WriteLine("bool --> " + log);
-            Console.Write("Введите значение boolean:");
-            log = Convert.ToBoolean(Console.ReadLine());
-            Console.WriteLine("Новое значение boolean --> " + log);
+            //Задание 1 A
+
+            //Логический тип bool
+            //true или false 
+            Console.WriteLine("Логические типы");
+            bool l = true;
+            Console.WriteLine("bool= " + l);
+            Console.Write("Введите значение bool:");
+            l = Convert.ToBoolean(Console.ReadLine());
+            Console.WriteLine("bool= " + l);
 
             //Целочисленные типы:
-            Console.WriteLine("-------------------Целочисленные типы----------------");
-            int a = 2; //от -2147483648 до 2147483647 и занимает 4 байта
-            Console.WriteLine("Int --> " + a);
+            //от -2147483648 до 2147483647 и занимает 4 байта
+            Console.WriteLine("Целочисленные типы");
+            int a = -6;
+            Console.WriteLine("Int= " + a);
             Console.Write("Введите значение Int: ");
             a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Новое значение Int --> " + a);
-
-            uint b = 4; //0 до 4294967295 и занимает 4 байта 
-            Console.WriteLine("Uint --> " + b);
+            Console.WriteLine("Int= " + a);
+            //0 до 4294967295 и занимает 4 байта 
+            uint b = 4; 
+            Console.WriteLine("Uint= " + b);
             Console.Write("Введите значение Uint: ");
             b = Convert.ToUInt32(Console.ReadLine());
-            Console.WriteLine("Новое значение Uint --> " + b);
+            Console.WriteLine("Uint= " + b);
 
-            short sh = -1102; //от -32768 до 32767 и занимает 2 байта
-            Console.WriteLine("Short --> " + sh);
+            //от -32768 до 32767 и занимает 2 байта
+            short s = -32766; 
+            Console.WriteLine("Short= " + s);
             Console.Write("Введите значение Short:");
-            sh = Convert.ToInt16(Console.ReadLine());
-            Console.WriteLine("Новое значение Short --> " + sh);
+            s = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Short= " + s);
 
-            ushort ush = 13525; //от 0 до 65535 и занимает 2 байта
-            Console.WriteLine("Ushort --> " + ush);
+            //от 0 до 65535 и занимает 2 байта
+            ushort us = 65534; 
+            Console.WriteLine("Ushort= " + us);
             Console.Write("Введите значение Ushort: ");
-            ush = Convert.ToUInt16(Console.ReadLine());
-            Console.WriteLine("Новое значение Ushort --> " + ush);
+            us = Convert.ToUInt16(Console.ReadLine());
+            Console.WriteLine("Ushort= " + us);
 
-            byte bt = 255; //от 0 до 255 занимает 1 байт
-            Console.WriteLine("Byte --> " + bt);
+            //от 0 до 255 занимает 1 байт
+            byte b1 = 255; 
+            Console.WriteLine("Byte " + b1);
             Console.Write("Введите значение Byte: ");
-            bt = Convert.ToByte(Console.ReadLine());
-            Console.WriteLine("Новое значение Byte --> " + bt);
+            b1 = Convert.ToByte(Console.ReadLine());
+            Console.WriteLine("Byte= " + b1);
 
-            sbyte sbt = 100; //от -128 до 127 и занимает 1 байт
-            Console.WriteLine("Sbyte --> " + sbt);
+            //от -128 до 127 и занимает 1 байт
+            sbyte sb1 = 126;
+            Console.WriteLine("Sbyte= " + sb1);
             Console.Write("Введите значение Sbyte: ");
-            sbt = Convert.ToSByte(Console.ReadLine());
-            Console.WriteLine("Новое значение Sbyte --> " + sbt);
+            sb1 = Convert.ToSByte(Console.ReadLine());
+            Console.WriteLine("Sbyte= " + sb1);
 
-            long lg = 124135522342352; // –9 223 372 036 854 775 808 до 9 223 372 036 854 775 807 и занимает 8 байт
-            Console.WriteLine("Long --> " + lg);
+            // –9 223 372 036 854 775 808 до 9 223 372 036 854 775 807 и занимает 8 байт
+            long lg = 124135522342352; 
+            Console.WriteLine("Long= " + lg);
             Console.Write("Введите значение Long ");
             lg = Convert.ToInt64(Console.ReadLine());
-            Console.WriteLine("Новое значение long --> " + lg);
+            Console.WriteLine("long= " + lg);
 
-            ulong ulg = 6342142645234; //0 до 18 446 744 073 709 551 615 и занимает 8 байт
-            Console.WriteLine("Ulong --> " + ulg);
+            //0 до 18 446 744 073 709 551 615 и занимает 8 байт
+            ulong ulg = 6342142645234; 
+            Console.WriteLine("Ulong= " + ulg);
             Console.Write("Введите значение Ulong: ");
             ulg = Convert.ToUInt64(Console.ReadLine());
-            Console.WriteLine("Новое значение Ulong --> " + ulg);
+            Console.WriteLine("Ulong= " + ulg);
 
             //Числа с плавающей точкой
-            Console.WriteLine("-------------------Числа с плавающей точкой----------------");
-            float fl = 14; //-3.4*10(38) до 3.4*10(38) и занимает 4 байта
-            Console.WriteLine("Float --> " + fl);
+            Console.WriteLine("Числа с плавающей точкой");
+            //-3.4*10(38) до 3.4*10(38) и занимает 4 байта
+            float fl = 14; 
+            Console.WriteLine("Float= " + fl);
             Console.Write("Введите значение Float: ");
             fl = Convert.ToSingle(Console.ReadLine());
-            Console.WriteLine("Новое значение Float --> " + fl);
+            Console.WriteLine("Float= " + fl);
 
-            double db = 0.655467; //±5.0*10-324 до ±1.7*10(308) и занимает 8 байт
-            Console.WriteLine("Double --> " + db);
+            //±5.0*10-324 до ±1.7*10(308) и занимает 8 байт
+            double db = 0.655467; 
+            Console.WriteLine("Double= " + db);
             Console.Write("Введите значение Double: ");
             db = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Новое значение Double --> " + db);
+            Console.WriteLine("Double= " + db);
 
             //Строка
-            Console.WriteLine("-------------------Строки----------------");
-            string str = "Привет мир!";
-            Console.WriteLine("String --> " + str);
-            Console.Write("Введите значение String: ");
+            Console.WriteLine("Строки");
+            string str = "My name Nikita Karebo";
+            Console.WriteLine("String " + str);
+            Console.Write("Введите String: ");
             str = Console.ReadLine();
-            Console.WriteLine("Новое значение String --> " + str);
+            Console.WriteLine("String " + str);
 
             //Символ
-            Console.WriteLine("-------------------Символ----------------");
+            Console.WriteLine("Char");
             char ch = 'a'; // занимает 2 байта
-            Console.WriteLine("Char --> " + ch);
-            Console.Write("Введите значение Char: ");
+            Console.WriteLine("Char " + ch);
+            Console.Write("Введите Char: ");
             ch = Convert.ToChar(Console.ReadLine());
-            Console.WriteLine("Новое значение Char --> " + ch);
+            Console.WriteLine("Char= " + ch);
 
             //Десятичный тип
-            Console.WriteLine("-------------------Десятичный тип----------------");
+            Console.WriteLine("Десятичный тип");
             decimal dc = 7; //от ±1.0*10-28 до ±7.9228*1028, может хранить 28 знаков после запятой и занимает 16 байт
-            Console.WriteLine("Demical --> " + dc);
+            Console.WriteLine("Demical= " + dc);
             Console.Write("Введите значение Demical: ");
             dc = Convert.ToDecimal(Console.ReadLine());
-            Console.WriteLine("Новое значение Demical --> " + dc);
+            Console.WriteLine("Demical= " + dc);
 
             //Задание 1b
             //Явные преобразования
             long yp1 = (long)a; //потеря данных
-            short yp2 = (short)bt;
-            byte yp3 = (byte)ush;
+            short yp2 = (short)b1;
+            byte yp3 = (byte)us;
             int yp4 = (int)b;
             ulong yp5 = (ulong)lg;
 
@@ -118,7 +129,7 @@ namespace Laba1
             float np2 = lg;
             ulong np3 = b;
             double np4 = fl;
-            int np5 = ush;
+            int np5 = us;
 
             //Задание 1c
             int box = 6;
@@ -128,28 +139,28 @@ namespace Laba1
             Console.Write("Распаковка " + unbox);
 
 
-            //Задание 1d //неявно типизированные переменные
+            //Задание 1d неявно типизированные переменные
             var str2 = "hello";
             var num = 13;
             var ch2 = 'r';
 
             //Задание 1e
-            int? n1 = null;
-            if (n1.HasValue)
-            {
-                Console.WriteLine(n1.Value);
-            }
-            else
-            {
-                Console.WriteLine("Нет значения");
-            }
+            int? a1 = 1;
+            int? b2 = null;
+            Console.WriteLine(a1 ?? 3); // 1 (если а не тру или не существует, тогда 3)
+            Console.WriteLine(b2 ?? 3); // 3
 
             //Задание 1f
-            var err = 5;
-            //err = 0.4; - ОШИБКА! Компилятор видит, что мы к var присвоили значение int и после переназначения в
-            //число типа double компилятор выдаёт ошибку
+            /*
+            var quest_1f = "1F";
+            quest_1f = 4;
+            */
+            /*
+            Это не работает, потмоу что компилятор выводит нашей 
+            переменной тип. Можно поменять значение переменной на тот
+            же тип данных.
+            */
 
-            
         }
     }
 }
