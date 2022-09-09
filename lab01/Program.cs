@@ -348,6 +348,26 @@ namespace Laba1
             string str_5 = "asdasf";
 
             Console.WriteLine(expempleFunc(mass_5, str_5));
+
+            //задание 6
+            uint a_6 = uint.MaxValue;
+
+            unchecked
+            {
+                Console.WriteLine(a_6 + 1);  // output: 0
+            }
+
+            try
+            {
+                checked
+                {
+                    Console.WriteLine(a_6 + 1);
+                }
+            }
+            catch (OverflowException e)
+            {
+                Console.WriteLine(e.Message);  // output: Arithmetic operation resulted in an overflow.
+            }
         }
     }
 }
