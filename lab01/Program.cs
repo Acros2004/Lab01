@@ -209,6 +209,84 @@ namespace Laba1
             string sym = "Н";
             Console.WriteLine("символ Н в начало строки --> " + strblr.Insert(0, sym));
             Console.WriteLine("символ Н в конец строки --> " + strblr.Insert(strblr.Length, sym));
+
+            //Задание 3а
+            int size1 = 5, size2 = 5;
+            int[,] massXY = new int[size1, size2]; //создание двумерного массива 
+            for (int i = 0; i < size1; i++)
+            {
+                for (int j = 0; j < size2; j++)
+                {
+                    massXY[i, j] = j;
+                    Console.Write(massXY[i, j]);
+                    Console.Write(" ");
+                }
+                Console.Write("\n");
+            }
+
+            //Задание 3b
+            string[] strarr = { "Строка 1", "Строка 2", "Строка 3" };
+            Console.WriteLine("Содержание массива:");
+            foreach (string sss in strarr)
+            {
+                Console.WriteLine(sss);
+            }
+            Console.WriteLine("Размер= " + strarr.Length);
+            Console.Write("Введите значение: ");
+            int elem = Convert.ToInt16(Console.ReadLine()) - 1;
+            for (int i = 0; i < strarr.Length; i++)
+            {
+                if (i == elem)
+                {
+                    Console.Write("Содержимое: ");
+                    strarr[i] = Console.ReadLine();
+                }
+            }
+            for (int i = 0; i < strarr.Length; i++)
+            {
+                Console.WriteLine("\t" + strarr[i]);
+            }
+
+            //Задание 3c
+            int[][] Arr = new int[3][];
+            Arr[0] = new int[2];
+            Arr[1] = new int[3];
+            Arr[2] = new int[4];
+
+            Console.WriteLine("Введите массив: ");
+            for (int i = 0; i < 2; i++)
+            {
+                int element = Convert.ToInt32(Console.ReadLine());
+                Arr[0][i] = element;
+            }
+            Console.WriteLine();
+            for (int i = 0; i < 3; i++)
+            {
+                int element = Convert.ToInt32(Console.ReadLine());
+                Arr[1][i] = element;
+            }
+            Console.WriteLine();
+            for (int i = 0; i < 4; i++)
+            {
+                int element = Convert.ToInt32(Console.ReadLine());
+                Arr[2][i] = element;
+            }
+            Console.WriteLine();
+
+            // Вывод ступеньчатого массива
+            Console.WriteLine("массив: ");
+            foreach (int[] row in Arr)
+            {
+                foreach (int number in row)
+                {
+                    Console.Write($"{number} \t");
+                }
+                Console.WriteLine();
+            }
+
+            //Задание 3d
+            var t1 = new Array[0];
+            var t2 = "";
         }
     }
 }
