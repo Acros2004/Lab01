@@ -28,28 +28,28 @@ namespace Laba1
             a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Int= " + a);
             //0 до 4294967295 и занимает 4 байта 
-            uint b = 4; 
+            uint b = 4;
             Console.WriteLine("Uint= " + b);
             Console.Write("Введите значение Uint: ");
             b = Convert.ToUInt32(Console.ReadLine());
             Console.WriteLine("Uint= " + b);
 
             //от -32768 до 32767 и занимает 2 байта
-            short s = -32766; 
+            short s = -32766;
             Console.WriteLine("Short= " + s);
             Console.Write("Введите значение Short:");
             s = Convert.ToInt16(Console.ReadLine());
             Console.WriteLine("Short= " + s);
 
             //от 0 до 65535 и занимает 2 байта
-            ushort us = 65534; 
+            ushort us = 65534;
             Console.WriteLine("Ushort= " + us);
             Console.Write("Введите значение Ushort: ");
             us = Convert.ToUInt16(Console.ReadLine());
             Console.WriteLine("Ushort= " + us);
 
             //от 0 до 255 занимает 1 байт
-            byte b1 = 255; 
+            byte b1 = 255;
             Console.WriteLine("Byte " + b1);
             Console.Write("Введите значение Byte: ");
             b1 = Convert.ToByte(Console.ReadLine());
@@ -63,14 +63,14 @@ namespace Laba1
             Console.WriteLine("Sbyte= " + sb1);
 
             // –9 223 372 036 854 775 808 до 9 223 372 036 854 775 807 и занимает 8 байт
-            long lg = 124135522342352; 
+            long lg = 124135522342352;
             Console.WriteLine("Long= " + lg);
             Console.Write("Введите значение Long ");
             lg = Convert.ToInt64(Console.ReadLine());
             Console.WriteLine("long= " + lg);
 
             //0 до 18 446 744 073 709 551 615 и занимает 8 байт
-            ulong ulg = 6342142645234; 
+            ulong ulg = 6342142645234;
             Console.WriteLine("Ulong= " + ulg);
             Console.Write("Введите значение Ulong: ");
             ulg = Convert.ToUInt64(Console.ReadLine());
@@ -79,14 +79,14 @@ namespace Laba1
             //Числа с плавающей точкой
             Console.WriteLine("Числа с плавающей точкой");
             //-3.4*10(38) до 3.4*10(38) и занимает 4 байта
-            float fl = 14; 
+            float fl = 14;
             Console.WriteLine("Float= " + fl);
             Console.Write("Введите значение Float: ");
             fl = Convert.ToSingle(Console.ReadLine());
             Console.WriteLine("Float= " + fl);
 
             //±5.0*10-324 до ±1.7*10(308) и занимает 8 байт
-            double db = 0.655467; 
+            double db = 0.655467;
             Console.WriteLine("Double= " + db);
             Console.Write("Введите значение Double: ");
             db = Convert.ToDouble(Console.ReadLine());
@@ -287,6 +287,35 @@ namespace Laba1
             //Задание 3d
             var t1 = new Array[0];
             var t2 = "";
+
+            //Задание 4a
+            (int, string, char, string, ulong) Kortesh = (19, "строка", 'A', "string", 123647687574L);
+            //пункт b
+            Console.WriteLine(Kortesh);
+            Console.WriteLine(Kortesh.Item1);
+
+            //Задание 4c
+            int numb_4C = Kortesh.Item1;
+
+            ulong numbFrK;
+
+            (_, _, _, _, numbFrK) = Kortesh;
+            Console.WriteLine(numbFrK);
+
+            (int, string) Kort2 = (123213, "sAfasf");
+
+            string WordfromKort2;
+            int numbfromKort2;
+
+            (numbfromKort2, WordfromKort2) = Kort2;
+            Console.WriteLine(WordfromKort2);
+            Console.WriteLine(numbfromKort2);
+            //задание 4d
+            var tuple1 = (23, 36);
+            var tuple2 = (17, 31);
+            Console.WriteLine(tuple1 == tuple2);
+            Console.WriteLine(tuple1 != tuple2);
+
         }
     }
 }
